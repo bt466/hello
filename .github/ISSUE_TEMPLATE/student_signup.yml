@@ -3,13 +3,6 @@ description: Sign-up Sheet for collaboration on course repository
 title: "[SIGN-UP] <Full Name>, <SIS ID>"
 labels: ["sign-up"]
 body:
-- type: checkboxes
-  attributes:
-    label: Is there an existing issue for this?
-    description: Please search to see if an issue already exists for the bug you encountered.
-    options:
-    - label: I have searched the existing issues
-      required: true
 - type: input
   id: full_name
   attributes:
