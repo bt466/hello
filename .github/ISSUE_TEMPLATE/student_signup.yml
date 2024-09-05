@@ -3,6 +3,16 @@ description: Sign-up Sheet for collaboration on course repository
 title: "[SIGN-UP] <Full Name>, <SIS ID>"
 labels: ["sign-up"]
 body:
+
+- type: dropdown
+  id: semester
+  attributes: 
+    label: Semester
+    options: 
+      - 24Fall
+      - 25Spring
+      - 25Fall
+
 - type: input
   id: full_name
   attributes:
@@ -14,14 +24,19 @@ body:
   id: sis_id
   attributes:
     label: SIS ID
+  validations: 
+    required: true
 
 - type: input 
   id: github_email
   attributes:
     label: Email address you've used to sign up for GitHub. 
-
+  validations: 
+    required: true
+    
 - type: input 
   id: github_handle
   attributes: 
-    label: Your GitHub username/handle
-
+    label: GitHub username/handle
+  validations: 
+    required: true
