@@ -6,12 +6,14 @@ body:
 - type: input
   id: full_name
   attributes:
-    label: Your Full Name
+    label: Full Name
+  validations: 
+    required: true
 
 - type: input
   id: sis_id
   attributes:
-    label: Provide your SIS ID
+    label: SIS ID
 
 - type: input 
   id: github_email
