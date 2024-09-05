@@ -14,24 +14,19 @@ body:
   id: full_name
   attributes:
     label: Your Full Name
-    options:
-      - required: true
 
 - type: input
   id: sis_id
   attributes:
     label: Provide your SIS ID
-    options:
-      - required: true
+
 - type: input 
   id: github_email
   attributes:
     label: Email address you've used to sign up for GitHub. 
-    options: 
-      - required: true
+
 - type: input 
   id: github_handle
   attributes: 
     label: Your GitHub username/handle
-    options: 
-      - required: true
+
