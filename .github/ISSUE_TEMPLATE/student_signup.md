@@ -2,17 +2,29 @@
 name: Student Sign-Up
 about: Signing up to this repository
 title: "[SIGN-UP] <Your Full Name>, <Your SIS ID>"
-labels: ''
+labels: 'sign-up'
 assignees: ''
-body:
-- type: input
-  id: prevalence
-  attributes:
-    label: Bug prevalence
-    description: "How often do you or others encounter this bug?"
-    placeholder: "Whenever I visit the user account page (1-2 times a week)"
-  validations:
-    required: true
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
 ---
 
 ### Student Information
